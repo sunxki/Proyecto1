@@ -19,7 +19,7 @@ body {
 
 .navbar a{
     text-decoration:none;
-    color:#fff;
+    color: #693131;
     width:100px;
     display:block;
     padding: 25px 20px;
@@ -30,5 +30,5 @@ body {
 }
 
 .navbar a:hover{
-    background:orange;
+    background: #7e5b24;
 }
