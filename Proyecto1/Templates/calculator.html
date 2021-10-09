@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculadora</title>
+</head>
+<body>
+
+{% include "nav-bar.html"%}
+
+<h2 style="color:blue" align="center">
+    La division de {{First_value}} entre {{Second_value}} es: {{division}}
+</h2>
+
+{% if division >= 5 %}
+<p  style="color:blue" align="center"> <strong>
+    Tu division es mayor a uno
+    </strong>
+</p>
+
+{% endif %}
+
+<h3 style="color:orange" align="center">
+  This operation was performed on {{time}}
+</h3>
+{% include "footer.html"%}
+</body>
+</html>
