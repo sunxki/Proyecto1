@@ -1,25 +1,19 @@
-<html>
+<!DOCTYPE html>
 <html lang="en">
+{% extends "base.html" %}
 <head>
     <meta charset="UTF-8">
-    <title>Home</title>
+     {% block title %} Home {% endblock %}
+    {% load static %}
+    <link rel="stylesheet" href="{% static "/home-style.css" %}">
+
 </head>
         <body>
-        {% include "nav-bar.html"%}
-
-        <h1 style="color:red" align="center">
-            hi, I'm listing yonaguni
-        </h1>
-        <h2 style="color:red" align="center">
-            This song is from Bad Bunny
-        </h2>
-        <p style="color:blue" align="center">
-            My favourite champs is {{characterName}} and its rol is {{characterRol}}
-        </p>
-
-
-
-
-
-         </body>
-        </html>
+        <div>
+        {% block content %}
+        <h1> Video </h1>
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/u7cBsVDxs2Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        {% endblock %}
+        </div>
+        </body>
+</html>

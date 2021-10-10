@@ -2,54 +2,16 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>
+        {% block title %} {% endblock %}
+    </title>
 </head>
 
-<style>
-    body {
-        align-items:center
-    }
-
-    div{
-        position: absolute;
-        margin: 0 !important;
-        color: #124;
-        top: 0;
-        left: 0;
-        right: 0;
-        z-index: 10;
-        padding: 30px 0;
-        transition: all ease 0.5s;
-        border-bottom: 3px solid rgba(68,84,106,0.2);
-
-    }
-    #barra{
-        color:red;
-        align-content:space-around;
-        margin:0;
-        padding:0;
-        list-stile: none;
-    }
-
-    #barra li{
-        display: inline;
-        margin: 0 80px
-    }
-
-
-
-</style>
-
 <body>
-    <div>
-    <ul id="barra" >
-        <li>Home</li>
-        <li>Services</li>
-        <li ><a href="https://www.facebook.com/david.gallegos7/"><strong> Who </li></strong></a>
-        <li><strong><a href='https://www.linkedin.com/in/david-gallegos3101/'> Contact</a> </li></strong></a>
-        <li>About me</li>
-    </ul>
-        </div>
+{% include "nav-bar.html"%}
+{% block content %}
 
+{% endblock %}
+{% include "footer.html"%}
 </body>
 </html>
