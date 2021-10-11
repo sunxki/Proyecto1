@@ -1,13 +1,8 @@
-body{
-    margin:0;
-    padding:0;
-    background: #a91010;
-}
 
-p{
-    background: #a91010;
+h1{
     align-items: center;
     font-size: medium;
+    background-color: #a91010;
 }
 
 iframe{

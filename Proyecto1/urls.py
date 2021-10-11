@@ -21,5 +21,6 @@ from Proyecto1.views import saludo, calculadora
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('saludo/', saludo),
-    path('division/<int:a>/<int:b>/', calculadora)
+    path('division/<int:a>/<int:b>/', calculadora),
+    path('simplerick/', saludo),
 ]
